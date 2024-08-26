@@ -8,6 +8,7 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
+
   timeElement.innerHTML = formatDate(date);
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -18,7 +19,7 @@ function updateWeather(response) {
 
 function formatDate(date) {
   let minutes = date.getMinutes();
-  let hours = date.getHours();
+  let hour = date.getHours();
   let days = [
      "Sunday",
      "Monday",
@@ -33,7 +34,7 @@ function formatDate(date) {
     minutes = `0${minutes}`
   }
 
-  return `${day} ${hours}:${minutes}`
+  return `${day} ${hour}:${minutes}`
 }
 
 function searchCity(city) {
