@@ -9,14 +9,14 @@ function updateWeather(response) {
   let date = new Date(response.data.time * 1000);
 let iconElement = document.querySelector("#weather-icon");
 
-iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
 
   timeElement.innerHTML = formatDate(date);
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function formatDate(date) {
