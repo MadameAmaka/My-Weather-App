@@ -59,20 +59,25 @@ color: rgb(243, 85, 85);
     justify-content: space-between;
 }
 .weather-app-icon{
-    font-size: 44px;
-    margin-top: 22px;
+    width: 90px;
+    height:90px;
+    margin-top: 10px;
+ 
+     
 }
 .weather-app-temperature-container{
     display: flex;
 }
 .weather-app-temperature{
-    font-size: 85px;
+    font-size: 90px;
     font-weight:bold ;
-    margin-left: 10px;
+    
+   
 }
 .weather-app-unit{
-    margin-top: 20px;
-    font-size: 28px;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left:-5px;
 }
 footer{
     border-top: 1px solid #F9F7FE;
