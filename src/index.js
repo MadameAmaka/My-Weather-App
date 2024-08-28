@@ -55,7 +55,7 @@ function submitSearch(event) {
 
 function formatDay(timeStamp){
   let date = new Date(timeStamp * 1000);
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"];
 
   return days[date.getDay()];
 
